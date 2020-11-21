@@ -9,33 +9,33 @@ class ChatModel {
 
 List<ChatModel> dummyData = [
   ChatModel(
-      name: "Pawan Kumar",
-      message: "Hey Flutter, You are so amazing !",
+      name: "Cool person A",
+      message: "Hello from the other side",
       time: "15:30",
       avatarUrl: "https://picsum.photos/200/300?random=1"),
   ChatModel(
-      name: "Harvey Spectre",
-      message: "Hey I have hacked whatsapp!",
+      name: "Cool person B",
+      message: "Hello from the other side",
       time: "17:30",
       avatarUrl: "https://picsum.photos/200/300?random=2"),
   ChatModel(
-      name: "Mike Ross",
-      message: "Wassup !",
+      name: "Cool person C",
+      message: "Hello from the other side",
       time: "5:00",
       avatarUrl: "https://picsum.photos/200/300?random=3"),
   ChatModel(
-      name: "Rachel",
-      message: "I'm good!",
+      name: "Cool person D",
+      message: "Hello from the other side",
       time: "10:30",
       avatarUrl: "https://picsum.photos/200/300?random=4"),
   ChatModel(
-      name: "Barry Allen",
-      message: "I'm the fastest man alive!",
+      name: "Cool person E",
+      message: "Hello from the other side",
       time: "12:30",
       avatarUrl: "https://picsum.photos/200/300?random=5"),
   ChatModel(
-      name: "Joe West",
-      message: "Hey Flutter, You are so cool !",
+      name: "Cool person F",
+      message: "Hello from the other side",
       time: "15:30",
       avatarUrl: "https://picsum.photos/200/300?random=6"),
 ];
