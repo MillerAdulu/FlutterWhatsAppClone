@@ -44,19 +44,13 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
           indicatorColor: Colors.white,
           tabs: <Widget>[
             Tab(text: "CHATS"),
-            Tab(
-              text: "STATUS",
-            ),
-            Tab(
-              text: "CALLS",
-            ),
+            Tab(text: "STATUS"),
+            Tab(text: "CALLS"),
           ],
         ),
         actions: <Widget>[
           Icon(Icons.search),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 5.0),
-          ),
+          Padding(padding: const EdgeInsets.symmetric(horizontal: 5.0)),
           Icon(Icons.more_vert)
         ],
       ),

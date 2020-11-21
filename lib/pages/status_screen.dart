@@ -20,7 +20,8 @@ class StatusScreen extends StatelessWidget {
                     CircleAvatar(
                       radius: 30,
                       backgroundImage: NetworkImage(
-                          "https://s3.amazonaws.com/wll-community-production/images/no-avatar.png"),
+                        "https://picsum.photos/100?random=8",
+                      ),
                     ),
                     Positioned(
                       bottom: 0.0,
@@ -66,17 +67,20 @@ class StatusScreen extends StatelessWidget {
                     leading: CircleAvatar(
                       radius: 30,
                       backgroundImage: NetworkImage(
-                          "https://pbs.twimg.com/media/EClDvMXU4AAw_lt?format=jpg&name=medium"),
+                        "https://picsum.photos/100?random=9",
+                      ),
                     ),
                     title: Text(
-                      "Pawan Kumar",
+                      "Developer Circles",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                     subtitle: Text("Today, 20:16 PM"),
                     onTap: () => Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => StoryPageView())),
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => StoryPageView(),
+                      ),
+                    ),
                   ),
                 ],
               ),
