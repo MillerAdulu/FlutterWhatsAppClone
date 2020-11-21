@@ -24,7 +24,7 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
     );
 
     _tabController.addListener(() {
-      if (_tabController.index == 1) {
+      if (_tabController.index == 0) {
         showFab = true;
       } else {
         showFab = false;
