@@ -1,14 +1,9 @@
-import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterwhatsapp/pages/call_screen.dart';
-import 'package:flutterwhatsapp/pages/camera_screen.dart';
 import 'package:flutterwhatsapp/pages/chat_screen.dart';
 import 'package:flutterwhatsapp/pages/status_screen.dart';
 
 class WhatsAppHome extends StatefulWidget {
-  final List<CameraDescription> cameras;
-  WhatsAppHome({this.cameras});
-
   @override
   _WhatsAppHomeState createState() => _WhatsAppHomeState();
 }
@@ -22,7 +17,12 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
   void initState() {
     super.initState();
 
-    _tabController = TabController(vsync: this, initialIndex: 1, length: 4);
+    _tabController = TabController(
+      vsync: this,
+      initialIndex: 1,
+      length: 3,
+    );
+
     _tabController.addListener(() {
       if (_tabController.index == 1) {
         showFab = true;
@@ -43,7 +43,6 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
           controller: _tabController,
           indicatorColor: Colors.white,
           tabs: <Widget>[
-            Tab(icon: Icon(Icons.camera_alt)),
             Tab(text: "CHATS"),
             Tab(
               text: "STATUS",
@@ -64,7 +63,6 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
       body: TabBarView(
         controller: _tabController,
         children: <Widget>[
-          CameraScreen(widget.cameras),
           ChatScreen(),
           StatusScreen(),
           CallsScreen(),
@@ -77,7 +75,7 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
                 Icons.message,
                 color: Colors.white,
               ),
-              onPressed: () => print("open chats"),
+              onPressed: () => print("New chat"),
             )
           : null,
     );
